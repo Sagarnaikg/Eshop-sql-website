@@ -1,0 +1,116 @@
+* {
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-color: #a2cc3c;
+  --dark-color: #484848;
+  --gray-color: #eaeaea;
+}
+
+.sm-navbar {
+  background-color: var(--gray-color);
+}
+
+.brand-logo i {
+  color: var(--green-color);
+}
+
+.brand-logo span {
+  color: var(--dark-color);
+}
+
+/* product card */
+.row .card {
+  min-height: 480px;
+  border-radius: 7px;
+  border: 2px solid var(--green-color);
+  box-shadow: none;
+}
+
+.row .card img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.row .card .product-price span {
+  margin-left: 10px;
+  color: var(--green-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.row .card .product-name {
+  padding-bottom: 20px;
+  color: var(--dark-color);
+  font-weight: bold;
+  font-size: large;
+}
+
+.buy-btn {
+  float: right;
+  padding: 20px;
+}
+
+/* taba */
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  text-transform: none !important;
+  background-color: transparent !important;
+  color: var(--dark-color);
+}
+
+.tabs .tab a {
+  text-transform: none !important;
+  background-color: transparent;
+  color: var(--dark-color) !important;
+}
+
+.tabs .indicator {
+  background-color: var(--green-color);
+}
+
+.btn,
+.btn-small {
+  color: var(--dark-color);
+  background-color: var(--green-color);
+}
+
+/* model */
+.modal {
+  color: var(--dark-color);
+}
+
+/* order card */
+.order-product-card {
+  margin: 10px 0px;
+  height: 150px;
+  border: 2px solid var(--green-color);
+  display: flex;
+}
+
+.order-product-card .content-section {
+  margin-left: 20px;
+}
+
+.order-product-card .content-section .input-field {
+  height: 50px;
+}
+
+.order-product-card .content-section .buy-btn {
+  padding: 0;
+}
+
+.card-order-footer {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-order-footer .product-price {
+  color: var(--green-color);
+  font-size: 2rem;
+  font-weight: bold;
+}

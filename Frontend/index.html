@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic meta tag 
+    ============================-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style files
+    ============================-->
+    <!-- material css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <!-- google icons and font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <!-- local css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- page title
+    ============================-->
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <!-- navigation bar
+    ============================-->
+    <nav class="z-depth-0 sm-navbar ">
+        <!-- nav bar -->
+        <div class="container nav-wrapper">
+            <a href="#" class="brand-logo"><i><b>Super<span>Market</span></b></i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li> <a id="b" class="waves-effect waves-light btn modal-trigger" href="#modal1"><i
+                            class="material-icons right">shopping_cart</i>My basket</a></a>
+                </li>
+                <li> <a id="o" class="waves-effect waves-light btn modal-trigger" href="#modal3">Orders</a>
+                </li>
+                <li> <a class="waves-effect waves-light btn modal-trigger" href="#modal2"><i
+                            class="material-icons right">account_circle</i>Account</a></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Modal Trigger -->
+        <!-- myorder trigger -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h5>My orders</h5>
+                <ul id="myOrders">
+
+                </ul>
+                <a id="ckeckout" class="waves-effect waves-light btn">Ckeckout</a>
+            </div>
+        </div>
+        <!-- Profilw model -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h5>My Profile</h5>
+                <ul class="profile-content" style="display: grid;grid-template-columns: auto auto;">
+                    <p>Name:-</p>
+                    <p>xyz</p>
+                    <p>Email:-</p>
+                    <p>eample@explae.com</p>
+                    <p>address</p>
+                    <p>some strret address</p>
+                    <p>Phone no:-</p>
+                    <p>1234567890</p>
+                </ul>
+            </div>
+        </div>
+        <!-- order histry -->
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <h5>My Orders</h5>
+                <ul id="orders">
+                    <div class="order-product-card">
+                        <div class="img-section" style="width: 100px;text-align: center;">
+                            <div class="product-name">12/12/30</div>
+                        </div>
+                        <div class="content-section">
+
+                            <div class="card-order-footer">
+                                <p class="product-price">₹56.00</p>
+                                <div class="product-name">Deleverd</div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- products section
+    ============================-->
+    <div class="container">
+        <div class="row">
+            <!-- catogary tabs -->
+            <div class="col s12">
+
+                <ul class="tabs">
+                    <li class="tab col s2 active"><a href="#test1">Fruits and Vegetables</a></li>
+                </ul>
+            </div>
+            <div id="test1" class="col s12">
+
+                <div class="products1" style="display: grid;grid-template-columns: 30% 30% 30%;">
+                    h
+                </div>
+
+            </div><!-- /test1 -->
+            <div id="test2" class="col s12">
+                <div class="products2" style="display: grid;grid-template-columns: 30% 30% 30%;">
+                    d
+                </div>
+            </div>
+            <div id="test3" class="col s12">
+                <div class="products3" style="display: grid;grid-template-columns: 30% 30% 30%;">
+                    d
+                </div>
+            </div>
+        </div><!-- /row -->
+    </div><!-- /container -->
+
+
+    <!-- script files
+    =========================================== -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- material js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- loval script -->
+    <script>
+        $(document).ready(function () {
+            $('.tabs').tabs();
+            $('select').formSelect();
+            $('.modal').modal();
+        });
+    </script>
+
+
+</body>
+
+</html>
